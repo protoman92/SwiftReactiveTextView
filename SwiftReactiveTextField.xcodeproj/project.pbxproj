@@ -11,7 +11,6 @@
 		D3124B1E1EB03AE500490D33 /* SwiftReactiveTextField.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D3124B1D1EB03AE500490D33 /* SwiftReactiveTextField.podspec */; };
 		D3124B201EB03C9700490D33 /* pod-publish in Resources */ = {isa = PBXBuildFile; fileRef = D3124B1F1EB03C9700490D33 /* pod-publish */; };
 		D35C69DF1EAFC08800C7FAE3 /* SwiftReactiveTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35C69D51EAFC08800C7FAE3 /* SwiftReactiveTextField.framework */; };
-		D35C69E41EAFC08800C7FAE3 /* UIReactiveTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C69E31EAFC08800C7FAE3 /* UIReactiveTextFieldTests.swift */; };
 		D35C69E61EAFC08800C7FAE3 /* SwiftReactiveTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = D35C69D81EAFC08800C7FAE3 /* SwiftReactiveTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D35C69F01EAFC1E700C7FAE3 /* UIReactiveTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C69EF1EAFC1E700C7FAE3 /* UIReactiveTextField.swift */; };
 		D35C69F11EAFC31C00C7FAE3 /* UIReactiveTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C69EF1EAFC1E700C7FAE3 /* UIReactiveTextField.swift */; };
@@ -41,7 +40,6 @@
 		D35C69D81EAFC08800C7FAE3 /* SwiftReactiveTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftReactiveTextField.h; sourceTree = "<group>"; };
 		D35C69D91EAFC08800C7FAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35C69DE1EAFC08800C7FAE3 /* SwiftReactiveTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReactiveTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D35C69E31EAFC08800C7FAE3 /* UIReactiveTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIReactiveTextFieldTests.swift; sourceTree = "<group>"; };
 		D35C69E51EAFC08800C7FAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35C69EF1EAFC1E700C7FAE3 /* UIReactiveTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIReactiveTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +120,6 @@
 		D35C69E21EAFC08800C7FAE3 /* SwiftReactiveTextFieldTests */ = {
 			isa = PBXGroup;
 			children = (
-				D35C69E31EAFC08800C7FAE3 /* UIReactiveTextFieldTests.swift */,
 				D35C69E51EAFC08800C7FAE3 /* Info.plist */,
 			);
 			path = SwiftReactiveTextFieldTests;
@@ -335,7 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D35C69F11EAFC31C00C7FAE3 /* UIReactiveTextField.swift in Sources */,
-				D35C69E41EAFC08800C7FAE3 /* UIReactiveTextFieldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

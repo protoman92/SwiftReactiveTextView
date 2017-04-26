@@ -22,14 +22,18 @@ open class UIReactiveTextField: UIBaseTextField {
         
         set {
             super.text = newValue
-            textValue.onNext(newValue)
+            
+            // Since UITextField's rx.text extension only listens to
+            // editingChanged/valueChanged events, we need to manually call one 
+            // of them in order to notify rx.text observer.
+            sendActions(for: .valueChanged)
         }
     }
 }
 
 extension UIReactiveTextField: InputFieldType {
     open var rxText: Observable<String?> {
-        return textValue.asObservable()
+        return rx.text.asObservable()
     }
     
     /// There is no separate placeholderView, we return the current
