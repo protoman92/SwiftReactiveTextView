@@ -28,7 +28,7 @@ open class UIReactiveTextField: UITextField {
 }
 
 extension UIReactiveTextField: InputFieldType {
-    open var rxText: Observable<String?>? {
+    open var rxText: Observable<String?> {
         return textValue.asObservable()
     }
     

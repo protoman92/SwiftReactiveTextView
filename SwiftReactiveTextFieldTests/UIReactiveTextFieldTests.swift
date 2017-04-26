@@ -32,7 +32,7 @@ class UIReactiveTextFieldTests: XCTestCase {
         let observer = scheduler.createObserver(String.self)
         
         // When
-        textField.rxText!
+        textField.rxText
             .asObservable()
             .skip(1)
             .map({$0 ?? ""})
