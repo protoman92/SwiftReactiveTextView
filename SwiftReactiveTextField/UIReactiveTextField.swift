@@ -14,7 +14,7 @@ import UIKit
 
 /// Thin wrapper for UITextField that supports listening to programmatic
 /// text changes.
-open class UIReactiveTextField: UITextField {
+open class UIReactiveTextField: UIBaseTextField {
     fileprivate let textValue = BehaviorSubject<String?>(value: nil)
     
     override open var text: String? {
