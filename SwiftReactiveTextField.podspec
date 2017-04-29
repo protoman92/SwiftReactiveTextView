@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.homepage = "https://github.com/protoman92/SwiftReactiveTextView.git"
     s.source = { :git => "https://github.com/protoman92/SwiftReactiveTextView.git", :tag => "#{s.version}"}
     s.framework = "UIKit"
-    s.dependency 'SwiftUIUtilities/Main'
+    s.dependency 'SwiftBaseViews/Main'
 
     s.subspec 'Main' do |main|
         main.source_files = "SwiftReactiveTextField/**/*.{swift,xib}"

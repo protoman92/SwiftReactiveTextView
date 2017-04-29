@@ -6,12 +6,12 @@ target 'SwiftReactiveTextField' do
   use_frameworks!
 
   # Pods for SwiftReactiveTextField
-  pod 'SwiftUIUtilities'
+  pod 'SwiftBaseViews/Main'
 
   target 'SwiftReactiveTextFieldTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'SwiftUtilitiesTests'
+    pod 'SwiftUIUtilitiesTests/Main'
     
   end
 

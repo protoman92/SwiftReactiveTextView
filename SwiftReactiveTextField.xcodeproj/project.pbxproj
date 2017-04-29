@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1A72C0100E47E75CEAA47F0D /* Pods_SwiftReactiveTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF4326E199D8641BCFE7502 /* Pods_SwiftReactiveTextField.framework */; };
 		D3124B1E1EB03AE500490D33 /* SwiftReactiveTextField.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D3124B1D1EB03AE500490D33 /* SwiftReactiveTextField.podspec */; };
-		D3124B201EB03C9700490D33 /* pod-publish in Resources */ = {isa = PBXBuildFile; fileRef = D3124B1F1EB03C9700490D33 /* pod-publish */; };
 		D35C69DF1EAFC08800C7FAE3 /* SwiftReactiveTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35C69D51EAFC08800C7FAE3 /* SwiftReactiveTextField.framework */; };
 		D35C69E61EAFC08800C7FAE3 /* SwiftReactiveTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = D35C69D81EAFC08800C7FAE3 /* SwiftReactiveTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D35C69F01EAFC1E700C7FAE3 /* UIReactiveTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C69EF1EAFC1E700C7FAE3 /* UIReactiveTextField.swift */; };
@@ -35,7 +34,6 @@
 		5CF4326E199D8641BCFE7502 /* Pods_SwiftReactiveTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftReactiveTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7AF39AB18B9EFBDE6E735B /* Pods-SwiftReactiveTextFieldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactiveTextFieldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactiveTextFieldTests/Pods-SwiftReactiveTextFieldTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3124B1D1EB03AE500490D33 /* SwiftReactiveTextField.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftReactiveTextField.podspec; sourceTree = "<group>"; };
-		D3124B1F1EB03C9700490D33 /* pod-publish */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pod-publish"; sourceTree = "<group>"; };
 		D35C69D51EAFC08800C7FAE3 /* SwiftReactiveTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftReactiveTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35C69D81EAFC08800C7FAE3 /* SwiftReactiveTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftReactiveTextField.h; sourceTree = "<group>"; };
 		D35C69D91EAFC08800C7FAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 		D35C69CB1EAFC08700C7FAE3 = {
 			isa = PBXGroup;
 			children = (
-				D3124B1F1EB03C9700490D33 /* pod-publish */,
 				D3124B1D1EB03AE500490D33 /* SwiftReactiveTextField.podspec */,
 				D35C69D71EAFC08800C7FAE3 /* SwiftReactiveTextField */,
 				D35C69E21EAFC08800C7FAE3 /* SwiftReactiveTextFieldTests */,
@@ -226,7 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3124B201EB03C9700490D33 /* pod-publish in Resources */,
 				D3124B1E1EB03AE500490D33 /* SwiftReactiveTextField.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +345,7 @@
 		D35C69E71EAFC08800C7FAE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -402,6 +399,7 @@
 		D35C69E81EAFC08800C7FAE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -492,7 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E7AF39AB18B9EFBDE6E735B /* Pods-SwiftReactiveTextFieldTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = S3V9CCW695;
 				INFOPLIST_FILE = SwiftReactiveTextFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -506,7 +504,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20DDC154C699811F6F159BC7 /* Pods-SwiftReactiveTextFieldTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = S3V9CCW695;
 				INFOPLIST_FILE = SwiftReactiveTextFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
