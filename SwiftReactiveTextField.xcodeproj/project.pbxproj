@@ -457,7 +457,7 @@
 				INFOPLIST_FILE = SwiftReactiveTextField/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiften.SwiftReactiveTextField;
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiften.SwiftReactiveTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -479,7 +479,7 @@
 				INFOPLIST_FILE = SwiftReactiveTextField/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiften.SwiftReactiveTextField;
+				PRODUCT_BUNDLE_IDENTIFIER = org.swiften.SwiftReactiveTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
